@@ -1,0 +1,25 @@
+Findings-
+
+Simulation used -
+
+* Asset transferred -
+a. Token
+b. Ether
+
+Static charge for any function -
+21720
+
+Current payroll implementation static charges-
+* require checks before for loop - 134 gas
+
+Current payroll implementation dynamic charges-
+
+* A cumulative gas price of 446169 for 10 receipients.
+
+1. Parameter forwarding cost for 1 receipient = 2091 gas
+2. Complete function execution cost for 1 address = 38130 gas
+  i. require address check = 1785
+  ii. contract balance check = 1665
+  iii. ether transfer = 7907
+  iv. token transfer = 24742
+  v. bool switch = 2029
